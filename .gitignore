@@ -2,6 +2,10 @@
 .idea
 .idea/*
 .idea/**
+.gradle
+.gradle/*
+.gradle/**
+
 
 
 
