@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TaskBuilder</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="none">None</string>
+    <string name="starts">starts</string>
+    <string name="ends">ends</string>
+    <string name="startsTime">Starts:</string>
+    <string name="endsTime">Ends:</string>
+    <string name="descriptionTaskLable">Description:</string>
+    <string name="nameTaskLable">Name</string>
+    <string name="emptyList">empty</string>
+    <string name="update">Update</string>
+    <string name="delete">DELETE</string>
+    <string name="infoToolbar">Info</string>
+    <string name="action_settings">Settings</string>
+</resources>

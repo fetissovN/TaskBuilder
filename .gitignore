@@ -1,0 +1,10 @@
+
+.idea
+.idea/*
+.idea/**
+
+
+
+
+[{"pid":0,"ph":"i","name":"Memory sample","ts":1517661744294000,"args":{"JVM stats":"heap_memory_usage: 143008328\nnon_heap_mem
+

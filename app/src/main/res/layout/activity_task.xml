@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_task_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/description_shape">
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/circleItem"-->
+        <!--android:layout_width="56dp"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.109"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/task_id"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:visibility="invisible" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/tv_item_name"-->
+        <!--android:layout_width="161dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:lineSpacingExtra="8sp"-->
+        <!--android:text="@string/nameTaskLable"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/circleItem"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/scrollView2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="210dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tvDescLable">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/tv_item_description"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="52dp"-->
+            <!--android:maxHeight="50dp"-->
+            <!--android:text="@string/none"-->
+            <!--android:textAlignment="center"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/circleItem" />-->
+
+    <!--</ScrollView>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_time_start"-->
+        <!--style="@style/TextStyleRecyclerTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="104dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:padding="2dp"-->
+        <!--android:text="@string/starts"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_time_expires"-->
+        <!--style="@style/TextStyleRecyclerTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="116dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:padding="2dp"-->
+        <!--android:text="@string/ends"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_time_start" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvLableStart"-->
+        <!--style="@style/TextStyleRecyclerTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:padding="2dp"-->
+        <!--android:text="@string/startsTime"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/tv_time_start"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvLableEnd"-->
+        <!--style="@style/TextStyleRecyclerTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:padding="2dp"-->
+        <!--android:text="@string/endsTime"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/tv_time_expires"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tvLableStart" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvDescLable"-->
+        <!--style="@style/TextStyleRecyclerTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="108dp"-->
+        <!--android:text="@string/descriptionTaskLable"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnUpdateTask"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginStart="32dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="@string/update"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/scrollView2" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnDeleteTask"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginEnd="32dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="@string/delete"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/scrollView2" />-->
+</android.support.constraint.ConstraintLayout>
