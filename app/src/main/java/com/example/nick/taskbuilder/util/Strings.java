@@ -8,4 +8,7 @@ public class Strings {
     public static final String TASK_INFO_NOT_VALID = "Name field should not be empty or less than 4 characters ";
     public static final String TASK_ACTIVITY_FAIL = "Something went wrong";
     public static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm";
+    public static final String DAYS_DELAY_TO_DELETE = "days";
+    public static final Integer MODE_SETTINGS = 2;
+    public static final Integer MODE_INFO = 1;
 }

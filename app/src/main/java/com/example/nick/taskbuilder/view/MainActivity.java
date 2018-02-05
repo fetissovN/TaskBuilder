@@ -1,6 +1,7 @@
 package com.example.nick.taskbuilder.view;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 import com.example.nick.taskbuilder.R;
 import com.example.nick.taskbuilder.adapter.SectionsPageAdapter;
 import com.example.nick.taskbuilder.service.CleanDBService;
+import com.example.nick.taskbuilder.util.Strings;
 import com.example.nick.taskbuilder.view.fragments.CalendarFragment;
 import com.example.nick.taskbuilder.view.fragments.CurrentWeekScheduleFragment;
 import com.example.nick.taskbuilder.view.fragments.DayScheduleFragment;
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity{
 
     private SectionsPageAdapter sectionsPageAdapter;
     private ViewPager viewPager;
-
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +43,15 @@ public class MainActivity extends AppCompatActivity{
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        long fiveDays = 5*24*3600*1000;
-        long timeTo = (Calendar.getInstance().getTimeInMillis() - fiveDays);
+        sharedPreferences = getPreferences(MODE_PRIVATE);
+        Integer savedInt = sharedPreferences.getInt(Strings.DAYS_DELAY_TO_DELETE, -1);
+        long daysInMillis;
+        if (savedInt != -1){
+            daysInMillis = savedInt*24*3600*1000;
+        }else {
+            daysInMillis = 5*24*3600*1000;
+        }
+        long timeTo = (Calendar.getInstance().getTimeInMillis() - daysInMillis);
         Intent intent = new Intent(this, CleanDBService.class);
         intent.putExtra("timeTo", timeTo);
         startService(intent);
@@ -60,6 +69,12 @@ public class MainActivity extends AppCompatActivity{
         int id = item.getItemId();
         if (id == R.id.action_info){
             Intent intent = new Intent(this, MenuActivity.class);
+            intent.putExtra("menu", Strings.MODE_INFO);
+            startActivity(intent);
+        }
+        if (id == R.id.action_settings){
+            Intent intent = new Intent(this, MenuActivity.class);
+            intent.putExtra("menu", Strings.MODE_SETTINGS);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
