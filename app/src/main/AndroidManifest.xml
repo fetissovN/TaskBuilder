@@ -22,7 +22,8 @@
         </activity>
         <activity android:name=".view.TaskActivity" />
         <activity android:name=".view.CalendarActivity" />
-        <activity android:name=".view.AddTaskActivity" />
+        <activity android:name=".view.AddTaskActivity"
+            android:screenOrientation="portrait"/>
 
         <receiver android:name=".util.TaskAlarmReceiver" />
 
